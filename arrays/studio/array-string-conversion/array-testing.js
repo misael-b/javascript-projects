@@ -11,7 +11,31 @@ function reverseCommas() {
 	let check;
 	let output;
 	//TODO: 2. write the code required for this step
+	check = protoArray1;
+	if (check.includes(',')&& !(check.includes(', '))) {
+		output = check.split(',').reverse().join(',');
+	} else {
+		
+	}
+	check = protoArray2;
+	if (check.includes(',') && !(check.includes(', '))) {
+		output = check.split(',').reverse().join(',');
+	} else {
 
+	}
+	check = protoArray3;
+	if (check.includes(',') && !(check.includes(', '))) {
+		output = check.split(',').reverse().join(',');
+	} else {
+
+	}
+	check = protoArray4;
+	if (check.includes(',') && !(check.includes(', '))) {
+		output = check.split(',').reverse().join(',');
+	} else {
+
+	}
+	
 	//NOTE: For the code to run properly, you must return your output.  this needs to be the final line of code within the function's { }.
 	return output;
 }
@@ -20,9 +44,32 @@ function reverseCommas() {
 function semiDash() {
 	let check;
 	let output;
-//TODO: write the code required for this step
+	//TODO: write the code required for this step
+	check = protoArray1;
+	if (check.includes(';')) {
+		output = check.split(';').sort().join('-');
+	} else {
 
-  
+	}
+	check = protoArray2;
+	if (check.includes(';')) {
+		output = check.split(';').sort().join('-');
+	} else {
+
+	}
+	check = protoArray3;
+	if (check.includes(';')) {
+		output = check.split(';').sort().join('-');
+	} else {
+
+	}
+	check = protoArray4;
+	if (check.includes(';')) {
+		output = check.split(';').sort().join('-');
+	} else {
+
+	};
+
 	return output;
 }
 
@@ -30,19 +77,73 @@ function semiDash() {
 function reverseSpaces() {
 	let check;
 	let output;
-  //TODO: write the code required for this step
+	//TODO: write the code required for this step
+
+	check = protoArray1;
+	if (check.includes(' ') && !(check.includes(', '))) {
+		output = check.split(' ').sort().reverse().join(' ');
+	} else {
+
+	}
+	check = protoArray2;
+	if (check.includes(' ') && !(check.includes(', '))) {
+		output = check.split(' ').sort().reverse().join(' ');
+	} else {
+
+	}
+	check = protoArray3;
+	if (check.includes(' ') && !(check.includes(', '))) {
+		output = check.split(' ').sort().reverse().join(' ');
+	} else {
+
+	}
+	check = protoArray4;
+	if (check.includes(' ') && !(check.includes(', '))) {
+		output = check.split(' ').sort().reverse().join(' ');
+	} else {
+
+	};
 
 	return output;
 }
+
+
 
 //5)
 function commaSpace() {
 	let check;
 	let output;
 	//TODO: write the code required for this step
-  
+	check = protoArray1;
+	if (check.includes(', ')) {
+		output = check.split(', ').reverse().join(',');
+	} else {
+
+	}
+	check = protoArray2;
+	if (check.includes(', ')) {
+		output = check.split(', ').reverse().join(',');
+	} else {
+
+	}
+	check = protoArray3;
+	if (check.includes(', ')) {
+		output = check.split(', ').reverse().join(',');
+	} else {
+
+	}
+	check = protoArray4;
+	if (check.includes(', ')) {
+		output = check.split(', ').reverse().join(',');
+
+	} else {
+
+	};
+
 	return output;
 }
+  
+
 
 // NOTE: Don't add or modify any code below this line or your program might not run as expected.
 module.exports = {
