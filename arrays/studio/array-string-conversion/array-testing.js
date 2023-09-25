@@ -153,4 +153,3 @@ module.exports = {
 	reverseSpaces : reverseSpaces,
 	commaSpace : commaSpace
 };
-

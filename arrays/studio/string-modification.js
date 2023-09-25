@@ -11,7 +11,6 @@ let newsStrStart = str.slice(3, str.length);
 newCharacter = newsStrStart + newStrEnd;
 
 
-
 //Use a template literal to print the original and modified string in a descriptive phrase.
 console.log(`The original word is '${str}' and the new word is '${newCharacter}'`);
 
