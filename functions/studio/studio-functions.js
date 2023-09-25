@@ -23,8 +23,15 @@ function reverseCharacters(string) {
     
 }
 
-let myVariableString = 'hello';
+let myVariableString = 'apple';
+let myVariableString2 = 'LC101';
+let myVariableString3 = 'Capitalized Letters';
+let myVariableString4 = 'I love the smell of code in the morning.';
+
 console.log(reverseCharacters(myVariableString));
+console.log(reverseCharacters(myVariableString2));
+console.log(reverseCharacters(myVariableString3));
+console.log(reverseCharacters(myVariableString4));
 
 // Part Two: Reverse Digits
 
@@ -39,6 +46,15 @@ let myVariableNumber = 123456789;
 console.log(`\nThe function works with strings: \n Original: ${myVariableString} \n Reversed String: ${reverseCharacters(myVariableString)}\n Data Type of Reversed String: ${typeof (reverseCharacters(myVariableString))}`)
 console.log(`\nThe function works with numbers: \n Original: ${myVariableNumber} \n Reversed Number: ${reverseCharacters(myVariableNumber)}\n Data Type of Reversed Number: ${typeof (reverseCharacters(myVariableNumber))}`)
 
+let testCase1 = 1234;
+let testCase2 = 'LC101';
+let testCase3 = 8675309;
+let testCase4 = 'radar';
+
+console.log(reverseCharacters(testCase1));
+console.log(reverseCharacters(testCase2));
+console.log(reverseCharacters(testCase3));
+console.log(reverseCharacters(testCase4));
 
 // Part Three: Complete Reversal
 
