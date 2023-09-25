@@ -7,8 +7,8 @@ console.log(jsCreator[42]);
 // let phrase = 'Code for fun';
 // console.log(phrase[2])
 
-let myStr = 'Index';
-console.log(myStr[4]);
+// let myStr = 'Index';
+// console.log(myStr[4]);
 
 let phrase = "JavaScript rocks!";
 console.log(phrase[phrase.length - 8]);
@@ -26,3 +26,5 @@ let org = "  The LaunchCode Foundation ";
 let trimmed = org.trim();
 
 console.log(trimmed);
+
+console.log('Launch\nCode'); 

@@ -27,3 +27,5 @@ console.log(table[2][1]);
 let test = [];
 test.push(table, table, table);  
 console.log(test[2][0][1]);
+ 
+

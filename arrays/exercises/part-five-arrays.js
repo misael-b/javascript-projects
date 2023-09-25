@@ -20,3 +20,4 @@ let cargoHold = "water,space suits,food,plasma sword,batteries";
 cargoHoldarray = cargoHold.split(",").sort();
 cargoHold2 = cargoHoldarray.join(",");
 console.log(cargoHold2);
+ 
