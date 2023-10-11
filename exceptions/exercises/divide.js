@@ -5,3 +5,14 @@
 // However, if the denominator is zero you should throw the error, "Attempted to divide by zero."
 
 // Code your divide function here:
+
+function devide(numerator, denominator) {
+    if (denominator === 0) {
+        throw Error("Attempted to divide by zero.");
+    } else {
+        return numerator / denominator;
+    }
+};
+
+
+console.log(devide(2, 0));
