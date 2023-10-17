@@ -58,19 +58,21 @@ console.log(`${maltese.name} earned an average test score of ${maltese.average()
 console.log(`${gator.name} earned an average test score of ${gator.average()}% and has a status of ${gator.status()}.`)
 
 //Part 4 - Use the methods to boost Glad Gator’s status to Reserve or higher. How many tests will it take to reach Reserve status? How many to reach Accepted? Remember, scores cannot exceed 100%.
-let numOfTests = 0
-while (!(gator.status() === 'Reserve')) {
-    gator.addScore(90); 
-    numOfTests += 1
-}; 
-
-console.log(`The number of tests to boost Glad Gator’s status to Reserve: ${numOfTests}\nAVG TEST SCORE: ${gator.average()}`)
 
 
-let numOfTestsAccepted = 0;
-while (!(gator.status() === 'Accepted')) {
-    gator.addScore(95);
-    numOfTestsAccepted += 1
-}; 
-console.log(`The number of tests to boost Glad Gator’s status to Accepted: ${numOfTestsAccepted}\nAVG TEST SCORE: ${gator.average()}`)
+function numOfTests(animal, newStatus, testScore) {
+    let numOfTests = 0;
+    while (!(animal.status() === newStatus)) {
+        gator.addScore(testScore);
+        numOfTests += 1
+    };
+    return numOfTests
+}
+
+
+console.log(`The number of tests to boost ${gator.name} status to Reserve: ${numOfTests(gator, 'Reserve', 90)}\nAVG TEST SCORE: ${gator.average()}`)
+
+
+
+console.log(`The number of tests to boost ${gator.name} status to Accepted: ${numOfTests(gator, 'Accepted', 95)}\nAVG TEST SCORE: ${gator.average()}`)
 
