@@ -39,6 +39,9 @@ function init() {
             let initialHeight = parseInt(spaceShuttleHeight.innerHTML);
             let newHeight = initialHeight - 10000;
             spaceShuttleHeight.innerHTML = newHeight;
+            let currentHeight = rocket.style.top.slice(0, -2)
+            let newHeightRocket = Number(currentHeight) + 10;
+            rocket.style.top = newHeightRocket + 'px'
 
         };
     });
@@ -59,35 +62,44 @@ function init() {
     
     
     left.addEventListener("click", function () {
-        let currentWidth = rocket.style.left.slice(0,-2)
-        let newWidth = Number(currentWidth) - 10;
-        rocket.style.left = newWidth + 'px'
-
+        if (Number(rocket.style.left.slice(0, -2) > -20)) {
+            let currentWidth = rocket.style.left.slice(0, -2)
+            let newWidth = Number(currentWidth) - 10;
+            rocket.style.left = newWidth + 'px'
+        }
     
     });
 
     right.addEventListener('click', function () {
-        let currentWidth = rocket.style.left.slice(0, -2)
-        let newWidth = Number(currentWidth) + 10;
-        rocket.style.left = newWidth + 'px'
+        if (Number(rocket.style.left.slice(0, -2)< 530) ) {
+            let currentWidth = rocket.style.left.slice(0, -2)
+            let newWidth = Number(currentWidth) + 10;
+            rocket.style.left = newWidth + 'px' 
+        }
+        
     })
 
     up.addEventListener('click', function () {
-        let currentHeight = rocket.style.top.slice(0, -2)
-        let newHeight = Number(currentHeight) - 10;
-        rocket.style.top = newHeight + 'px'
-        let initialHeight = parseInt(spaceShuttleHeight.innerHTML);
-        let newHeightNum = initialHeight + 10000;
-        spaceShuttleHeight.innerHTML = newHeightNum
+        let currentHeight = Number(rocket.style.top.slice(0, -2))
+        if (spaceShuttleHeight.innerHTML < 250000) {
+            let newHeight = (currentHeight) - 10;
+            rocket.style.top = newHeight + 'px'
+            let initialHeight = parseInt(spaceShuttleHeight.innerHTML);
+            let newHeightNum = initialHeight + 10000;
+            spaceShuttleHeight.innerHTML = newHeightNum
+        }
+        
     });
 
     down.addEventListener('click', function () {
-        let currentHeight = rocket.style.top.slice(0, -2)
-        let newHeight = Number(currentHeight) + 10;
-        rocket.style.top = newHeight + 'px'
-        let initialHeight = parseInt(spaceShuttleHeight.innerHTML);
-        let newHeightNum = initialHeight - 10000;
-        spaceShuttleHeight.innerHTML = newHeightNum
+        if (spaceShuttleHeight.innerHTML > 0) {
+            let currentHeight = rocket.style.top.slice(0, -2)
+            let newHeight = Number(currentHeight) + 10;
+            rocket.style.top = String(newHeight) + 'px'
+            let initialHeight = parseInt(spaceShuttleHeight.innerHTML);
+            let newHeightNum = initialHeight - 10000;
+            spaceShuttleHeight.innerHTML = newHeightNum
+        }
     });
  };
 
