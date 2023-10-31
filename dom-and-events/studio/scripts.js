@@ -60,7 +60,7 @@ function init() {
     
     left.addEventListener("click", function () {
         let currentWidth = rocket.style.left.slice(0,-2)
-        let newWidth = Number(currentWidth) + 10;
+        let newWidth = Number(currentWidth) - 10;
         rocket.style.left = newWidth + 'px'
 
     
@@ -68,7 +68,7 @@ function init() {
 
     right.addEventListener('click', function () {
         let currentWidth = rocket.style.left.slice(0, -2)
-        let newWidth = Number(currentWidth) - 10;
+        let newWidth = Number(currentWidth) + 10;
         rocket.style.left = newWidth + 'px'
     })
 
