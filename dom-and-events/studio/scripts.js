@@ -37,11 +37,9 @@ function init() {
             flightStatus.innerHTML = "The shuttle has landed.";
             shuttleBackground.style.backgroundColor = 'green';
             let initialHeight = parseInt(spaceShuttleHeight.innerHTML);
-            let newHeight = initialHeight - 10000;
-            spaceShuttleHeight.innerHTML = newHeight;
-            let currentHeight = rocket.style.top.slice(0, -2)
-            let newHeightRocket = Number(currentHeight) + 10;
-            rocket.style.top = newHeightRocket + 'px'
+            spaceShuttleHeight.innerHTML = 0;
+            rocket.style.left = '0px'
+            rocket.style.top = '250px'
 
         };
     });
